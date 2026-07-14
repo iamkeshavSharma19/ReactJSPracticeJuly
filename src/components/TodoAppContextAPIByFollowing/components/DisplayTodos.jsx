@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import { TodoContext } from "../context/TodoContextProvider";
 
 const DisplayTodos = () => {
-  const { allTodos } = useContext(TodoContext);
+  const { allTodos, handleDeleteTodo, handleEditTodo } =
+    useContext(TodoContext);
   return (
     <div>
       <p>All Todos will be displayed here</p>
@@ -30,8 +31,10 @@ const DisplayTodos = () => {
                     gap: "10px",
                   }}
                 >
-                  <button>edit</button>
-                  <button>delete</button>
+                  <button onClick={() => handleEditTodo(ele.id)}>edit</button>
+                  <button onClick={() => handleDeleteTodo(ele.id)}>
+                    delete
+                  </button>
                 </div>
               </div>
             );
