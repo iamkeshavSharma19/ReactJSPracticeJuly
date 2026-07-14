@@ -28,6 +28,13 @@ body {
   color: black !important;
 }
 
+.button-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 20px !important;
+}
+
 .glitter {
   color: #fff;
   background: #262626;

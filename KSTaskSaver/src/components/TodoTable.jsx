@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { todoContext } from "../TodoContextProvider";
 
 const TodoTable = () => {
+  const { allTodos, handleDeleteTodo, handleEditTodo } =
+    useContext(todoContext);
   return (
     <>
       <table className="table table-dark todo-table table-bordered border-grey glitter mx-auto">
@@ -11,26 +14,33 @@ const TodoTable = () => {
             <th scope="col">Actions</th>
           </tr>
         </thead>
-        {/* <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-           
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>John</td>
-            <td>Doe</td>
-            
-          </tr>
-        </tbody> */}
+
+        {allTodos.length !== 0 && (
+          <tbody>
+            {allTodos.map((todo) => (
+              <tr key={todo.id}>
+                <td>{todo.title}</td>
+                <td>{todo.description}</td>
+                <td className="button-container">
+                  <button
+                    type="button"
+                    className="btn btn-light"
+                    onClick={() => handleEditTodo(todo.id)}
+                  >
+                    Edit
+                  </button>
+                  <button
+                    type="button"
+                    className="btn btn-light"
+                    onClick={() => handleDeleteTodo(todo.id)}
+                  >
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        )}
       </table>
     </>
   );

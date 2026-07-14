@@ -2,8 +2,14 @@ import React, { useContext } from "react";
 import { todoContext } from "../TodoContextProvider";
 
 const TodosInputForm = () => {
-  const { title, description, handleTitle, handleDescription, handleSaveTask } =
-    useContext(todoContext);
+  const {
+    title,
+    description,
+    handleTitle,
+    handleDescription,
+    handleSaveTask,
+    editId,
+  } = useContext(todoContext);
   return (
     <>
       <div className="mb-3 mx-auto title mt-4">
@@ -46,7 +52,7 @@ const TodosInputForm = () => {
           className="btn button glitter btn-dark ml-5"
           onClick={handleSaveTask}
         >
-          Save Task
+          {editId ? "Update" : "Save Task"}
         </button>
         <button type="button" className="btn button glitter btn-dark clear">
           Clear All Tasks
