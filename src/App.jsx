@@ -3,15 +3,17 @@ import ControlledForms01 from "./components/ControlledFormsByFollowing/Controlle
 import ControllerForms01PracticeOnMyOwn from "./components/ControlledFormsByFollowing/ControllerForms01PracticeOnMyOwn";
 import TodoContextProvider from "./components/TodoAppContextAPIByFollowing/context/TodoContextProvider";
 import TodoApp from "./components/TodoAppContextAPIByFollowing/TodoApp";
+import ControlledForms02ByFollowing from "./components/ControlledFormsPart2UsingSingleState/ControlledForms02ByFollowing";
 
 const App = () => {
   return (
     <div>
       {/* <ControlledForms01 /> */}
       {/* <ControllerForms01PracticeOnMyOwn /> */}
-      <TodoContextProvider>
+      {/* <TodoContextProvider>
         <TodoApp />
-      </TodoContextProvider>
+      </TodoContextProvider> */}
+      <ControlledForms02ByFollowing />
     </div>
   );
 };
