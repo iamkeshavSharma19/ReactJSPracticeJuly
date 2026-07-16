@@ -1,0 +1,53 @@
+body {
+  background-color: rgb(20, 28, 58) !important;
+}
+
+.heading3 {
+  margin-left: 110px !important;
+}
+
+.card-container {
+  margin-left: 110px !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 70px !important;
+}
+
+.title {
+  width: 85%;
+}
+
+.description {
+  width: 85%;
+}
+
+.buttons {
+  margin-left: 110px;
+  padding: 12px;
+}
+
+.clear {
+  margin-left: 16px;
+}
+
+.button {
+  border: 2px solid aliceblue !important;
+}
+
+.button:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+.button-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 20px !important;
+}
+
+.displayBtn-container {
+  display: flex !important;
+
+  gap: 10px !important;
+}
