@@ -4,6 +4,7 @@ import ControllerForms01PracticeOnMyOwn from "./components/ControlledFormsByFoll
 import TodoContextProvider from "./components/TodoAppContextAPIByFollowing/context/TodoContextProvider";
 import TodoApp from "./components/TodoAppContextAPIByFollowing/TodoApp";
 import ControlledForms02ByFollowing from "./components/ControlledFormsPart2UsingSingleState/ControlledForms02ByFollowing";
+import LifeCycleCBCByFollowing from "./components/LifeCycleByFollowing/LifeCycleCBCByFollowing";
 
 const App = () => {
   return (
@@ -13,7 +14,8 @@ const App = () => {
       {/* <TodoContextProvider>
         <TodoApp />
       </TodoContextProvider> */}
-      <ControlledForms02ByFollowing />
+      {/* <ControlledForms02ByFollowing /> */}
+      <LifeCycleCBCByFollowing />
     </div>
   );
 };
