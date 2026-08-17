@@ -7,6 +7,8 @@ import ControlledForms02ByFollowing from "./components/ControlledFormsPart2Using
 import LifeCycleCBCByFollowing from "./components/LifeCycleByFollowing/LifeCycleCBCByFollowing";
 import ControlledForm01ByFollowing from "./ControlledFormsAugPractice/ControlledForm01ByFollowing";
 import ControlledForms01OwnPractice from "./ControlledFormsAugPractice/ControlledForms01OwnPractice";
+import ContextExample from "./components/ContextAPIPracticeByFollowing/ContextExample";
+import Parent from "./components/ContextAPIPracticeByFollowing/Parent";
 
 const App = () => {
   const [toggle, setToggle] = useState(false);
@@ -22,7 +24,11 @@ const App = () => {
       {/* <button onClick={handleToggle}>Toggle Me</button>
       {toggle && <LifeCycleCBCByFollowing />} */}
       {/* <ControlledForm01ByFollowing /> */}
-      <ControlledForms01OwnPractice />
+      {/* <ControlledForms01OwnPractice /> */}
+      <ContextExample>
+        {/* Parent Component here will become the Children Props */}
+        <Parent />
+      </ContextExample>
     </div>
   );
 };
