@@ -5,6 +5,7 @@ import TodoContextProvider from "./components/TodoAppContextAPIByFollowing/conte
 import TodoApp from "./components/TodoAppContextAPIByFollowing/TodoApp";
 import ControlledForms02ByFollowing from "./components/ControlledFormsPart2UsingSingleState/ControlledForms02ByFollowing";
 import LifeCycleCBCByFollowing from "./components/LifeCycleByFollowing/LifeCycleCBCByFollowing";
+import ControlledForm01ByFollowing from "./ControlledFormsAugPractice/ControlledForm01ByFollowing";
 
 const App = () => {
   const [toggle, setToggle] = useState(false);
@@ -17,8 +18,9 @@ const App = () => {
         <TodoApp />
       </TodoContextProvider> */}
       {/* <ControlledForms02ByFollowing /> */}
-      <button onClick={handleToggle}>Toggle Me</button>
-      {toggle && <LifeCycleCBCByFollowing />}
+      {/* <button onClick={handleToggle}>Toggle Me</button>
+      {toggle && <LifeCycleCBCByFollowing />} */}
+      <ControlledForm01ByFollowing />
     </div>
   );
 };
