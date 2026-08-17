@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import ControlledForms01 from "./components/ControlledFormsByFollowing/ControlledForms01";
 import ControllerForms01PracticeOnMyOwn from "./components/ControlledFormsByFollowing/ControllerForms01PracticeOnMyOwn";
-import TodoContextProvider from "./components/TodoAppContextAPIByFollowing/context/TodoContextProvider";
-import TodoApp from "./components/TodoAppContextAPIByFollowing/TodoApp";
+// import TodoContextProvider from "./components/TodoAppContextAPIByFollowing/context/TodoContextProvider";
+// import TodoApp from "./components/TodoAppContextAPIByFollowing/TodoApp";
 import ControlledForms02ByFollowing from "./components/ControlledFormsPart2UsingSingleState/ControlledForms02ByFollowing";
 import LifeCycleCBCByFollowing from "./components/LifeCycleByFollowing/LifeCycleCBCByFollowing";
 import ControlledForm01ByFollowing from "./ControlledFormsAugPractice/ControlledForm01ByFollowing";
 import ControlledForms01OwnPractice from "./ControlledFormsAugPractice/ControlledForms01OwnPractice";
 import ContextExample from "./components/ContextAPIPracticeByFollowing/ContextExample";
 import Parent from "./components/ContextAPIPracticeByFollowing/Parent";
+import TodoContextProvider from "./components/TodoAppContextAPIAugPractice/context/TodoContextProvider";
+import TodoApp from "./components/TodoAppContextAPIAugPractice/TodoApp";
 
 const App = () => {
   const [toggle, setToggle] = useState(false);
@@ -25,10 +27,13 @@ const App = () => {
       {toggle && <LifeCycleCBCByFollowing />} */}
       {/* <ControlledForm01ByFollowing /> */}
       {/* <ControlledForms01OwnPractice /> */}
-      <ContextExample>
-        {/* Parent Component here will become the Children Props */}
+      {/* <ContextExample>
+        
         <Parent />
-      </ContextExample>
+      </ContextExample> */}
+      <TodoContextProvider>
+        <TodoApp />
+      </TodoContextProvider>
     </div>
   );
 };
