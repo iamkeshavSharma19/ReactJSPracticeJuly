@@ -3,7 +3,7 @@ import ControlledForms01 from "./components/ControlledFormsByFollowing/Controlle
 import ControllerForms01PracticeOnMyOwn from "./components/ControlledFormsByFollowing/ControllerForms01PracticeOnMyOwn";
 // import TodoContextProvider from "./components/TodoAppContextAPIByFollowing/context/TodoContextProvider";
 // import TodoApp from "./components/TodoAppContextAPIByFollowing/TodoApp";
-import ControlledForms02ByFollowing from "./components/ControlledFormsPart2UsingSingleState/ControlledForms02ByFollowing";
+import ControlledForms02ByFollowing from "./components/ControlledFormsPart02AugPractice/ControlledForms02ByFollowing";
 import LifeCycleCBCByFollowing from "./components/LifeCycleByFollowing/LifeCycleCBCByFollowing";
 import ControlledForm01ByFollowing from "./ControlledFormsAugPractice/ControlledForm01ByFollowing";
 import ControlledForms01OwnPractice from "./ControlledFormsAugPractice/ControlledForms01OwnPractice";
@@ -31,9 +31,10 @@ const App = () => {
         
         <Parent />
       </ContextExample> */}
-      <TodoContextProvider>
+      {/* <TodoContextProvider>
         <TodoApp />
-      </TodoContextProvider>
+      </TodoContextProvider> */}
+      <ControlledForms02ByFollowing />
     </div>
   );
 };
