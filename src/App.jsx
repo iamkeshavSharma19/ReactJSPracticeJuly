@@ -11,6 +11,10 @@ import ContextExample from "./components/ContextAPIPracticeByFollowing/ContextEx
 import Parent from "./components/ContextAPIPracticeByFollowing/Parent";
 import TodoContextProvider from "./components/TodoAppContextAPIAugPractice/context/TodoContextProvider";
 import TodoApp from "./components/TodoAppContextAPIAugPractice/TodoApp";
+import WrestlerContextProvider, {
+  WrestlerContext,
+} from "./components/WrestlersManagementSystem/context/WrestlerContextProvider";
+import WrestlersApp from "./components/WrestlersManagementSystem/WrestlersApp";
 
 const App = () => {
   const [toggle, setToggle] = useState(false);
@@ -34,7 +38,10 @@ const App = () => {
       {/* <TodoContextProvider>
         <TodoApp />
       </TodoContextProvider> */}
-      <ControlledForms02ByFollowing />
+      {/* <ControlledForms02ByFollowing /> */}
+      <WrestlerContextProvider>
+        <WrestlersApp />
+      </WrestlerContextProvider>
     </div>
   );
 };
