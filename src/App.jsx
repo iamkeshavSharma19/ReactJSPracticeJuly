@@ -22,6 +22,8 @@ import LifeCycleInCBCPracticeOwnMyOwn from "./components/LifeMethodsPracticeOwnM
 import LifeCycleInFBCPracticeOwnMyOwn from "./components/LifeMethodsPracticeOwnMyOwn/LifeCycleInFBCPracticeOwnMyOwn";
 import FetchProductsByFollowing from "./components/Fetch/FetchProductsByFollowing";
 import FetchProductsPracticeOwnMyOwn from "./components/Fetch/FetchProductsPracticeOwnMyOwn";
+import Reducer from "./components/Reducer/Reducer";
+// import UseReducerHookByFollowing from "./components/useReducerHookByFollowing/UseReducerHookByFollowing";
 
 const App = () => {
   const [toggle, setToggle] = useState(false);
@@ -34,9 +36,9 @@ const App = () => {
         <TodoApp />
       </TodoContextProvider> */}
       {/* <ControlledForms02ByFollowing /> */}
-      <button onClick={handleToggle}>Toggle Me</button>
-      {toggle &&  <FetchProductsPracticeOwnMyOwn />}
-     
+      {/* <button onClick={handleToggle}>Toggle Me</button>
+      {toggle &&  <FetchProductsPracticeOwnMyOwn />} */}
+
       {/* <LifeCycleInFBCByFollowing /> */}
       {/* <LifeCycleCBCByFollowing /> */}
       {/* <ControlledForm01ByFollowing /> */}
@@ -54,6 +56,9 @@ const App = () => {
       </WrestlerContextProvider> */}
       {/* <UncontrolledFormsByFollowing /> */}
       {/* <UncontrolledFormsPracticeOwnMyOwn /> */}
+      {/* <UseReducerHookByFollowing /> */}
+      {/* <UseReducerHookPracticeOwnMyOwn /> */}
+      <Reducer />
     </div>
   );
 };
