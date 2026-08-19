@@ -21,6 +21,7 @@ import LifeCycleInFBCByFollowing from "./components/LifeCycleByFollowing/LifeCyc
 import LifeCycleInCBCPracticeOwnMyOwn from "./components/LifeMethodsPracticeOwnMyOwn/LifeCycleInCBCPracticeOwnMyOwn";
 import LifeCycleInFBCPracticeOwnMyOwn from "./components/LifeMethodsPracticeOwnMyOwn/LifeCycleInFBCPracticeOwnMyOwn";
 import FetchProductsByFollowing from "./components/Fetch/FetchProductsByFollowing";
+import FetchProductsPracticeOwnMyOwn from "./components/Fetch/FetchProductsPracticeOwnMyOwn";
 
 const App = () => {
   const [toggle, setToggle] = useState(false);
@@ -34,8 +35,8 @@ const App = () => {
       </TodoContextProvider> */}
       {/* <ControlledForms02ByFollowing /> */}
       <button onClick={handleToggle}>Toggle Me</button>
-      {toggle && <FetchProductsByFollowing />}
-
+      {toggle &&  <FetchProductsPracticeOwnMyOwn />}
+     
       {/* <LifeCycleInFBCByFollowing /> */}
       {/* <LifeCycleCBCByFollowing /> */}
       {/* <ControlledForm01ByFollowing /> */}
