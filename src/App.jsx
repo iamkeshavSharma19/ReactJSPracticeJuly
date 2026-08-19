@@ -23,6 +23,7 @@ import LifeCycleInFBCPracticeOwnMyOwn from "./components/LifeMethodsPracticeOwnM
 import FetchProductsByFollowing from "./components/Fetch/FetchProductsByFollowing";
 import FetchProductsPracticeOwnMyOwn from "./components/Fetch/FetchProductsPracticeOwnMyOwn";
 import Reducer from "./components/Reducer/Reducer";
+import Optimisation from "./components/optimisation/Optimisation";
 // import UseReducerHookByFollowing from "./components/useReducerHookByFollowing/UseReducerHookByFollowing";
 
 const App = () => {
@@ -58,7 +59,8 @@ const App = () => {
       {/* <UncontrolledFormsPracticeOwnMyOwn /> */}
       {/* <UseReducerHookByFollowing /> */}
       {/* <UseReducerHookPracticeOwnMyOwn /> */}
-      <Reducer />
+      {/* <Reducer /> */}
+      <Optimisation />
     </div>
   );
 };
