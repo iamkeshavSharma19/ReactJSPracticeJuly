@@ -16,6 +16,7 @@ import WrestlerContextProvider, {
 } from "./components/WrestlersManagementSystem/context/WrestlerContextProvider";
 import WrestlersApp from "./components/WrestlersManagementSystem/WrestlersApp";
 import UncontrolledFormsByFollowing from "./components/UncontrolledForms/UncontrolledFormsByFollowing";
+import UncontrolledFormsPracticeOwnMyOwn from "./components/UncontrolledForms/UncontrolledFormsPracticeOwnMyOwn";
 
 const App = () => {
   const [toggle, setToggle] = useState(false);
@@ -43,7 +44,8 @@ const App = () => {
       {/* <WrestlerContextProvider>
         <WrestlersApp />
       </WrestlerContextProvider> */}
-      <UncontrolledFormsByFollowing />
+      {/* <UncontrolledFormsByFollowing /> */}
+      <UncontrolledFormsPracticeOwnMyOwn />
     </div>
   );
 };
