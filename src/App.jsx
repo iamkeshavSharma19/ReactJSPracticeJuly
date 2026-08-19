@@ -18,6 +18,7 @@ import WrestlersApp from "./components/WrestlersManagementSystem/WrestlersApp";
 import UncontrolledFormsByFollowing from "./components/UncontrolledForms/UncontrolledFormsByFollowing";
 import UncontrolledFormsPracticeOwnMyOwn from "./components/UncontrolledForms/UncontrolledFormsPracticeOwnMyOwn";
 import LifeCycleInFBCByFollowing from "./components/LifeCycleByFollowing/LifeCycleInFBCByFollowing";
+import LifeCycleInCBCPracticeOwnMyOwn from "./components/LifeMethodsPracticeOwnMyOwn/LifeCycleInCBCPracticeOwnMyOwn";
 
 const App = () => {
   const [toggle, setToggle] = useState(false);
@@ -31,7 +32,8 @@ const App = () => {
       </TodoContextProvider> */}
       {/* <ControlledForms02ByFollowing /> */}
       <button onClick={handleToggle}>Toggle Me</button>
-      {toggle && <LifeCycleInFBCByFollowing />}
+      {toggle && <LifeCycleInCBCPracticeOwnMyOwn />}
+
       {/* <LifeCycleInFBCByFollowing /> */}
       {/* <LifeCycleCBCByFollowing /> */}
       {/* <ControlledForm01ByFollowing /> */}
