@@ -19,6 +19,7 @@ import UncontrolledFormsByFollowing from "./components/UncontrolledForms/Uncontr
 import UncontrolledFormsPracticeOwnMyOwn from "./components/UncontrolledForms/UncontrolledFormsPracticeOwnMyOwn";
 import LifeCycleInFBCByFollowing from "./components/LifeCycleByFollowing/LifeCycleInFBCByFollowing";
 import LifeCycleInCBCPracticeOwnMyOwn from "./components/LifeMethodsPracticeOwnMyOwn/LifeCycleInCBCPracticeOwnMyOwn";
+import LifeCycleInFBCPracticeOwnMyOwn from "./components/LifeMethodsPracticeOwnMyOwn/LifeCycleInFBCPracticeOwnMyOwn";
 
 const App = () => {
   const [toggle, setToggle] = useState(false);
@@ -32,7 +33,7 @@ const App = () => {
       </TodoContextProvider> */}
       {/* <ControlledForms02ByFollowing /> */}
       <button onClick={handleToggle}>Toggle Me</button>
-      {toggle && <LifeCycleInCBCPracticeOwnMyOwn />}
+      {toggle && <LifeCycleInFBCPracticeOwnMyOwn />}
 
       {/* <LifeCycleInFBCByFollowing /> */}
       {/* <LifeCycleCBCByFollowing /> */}
