@@ -13,7 +13,11 @@ const Optimisation = () => {
     return add * 5;
   }, [add]);
 
-  const display = useCallback(() => {
+  const arr = [10, 20, 30];
+
+  const display = useCallback((arr) => {
+    console.log(arr);
+
     console.log("Display function");
   }, []);
   return (

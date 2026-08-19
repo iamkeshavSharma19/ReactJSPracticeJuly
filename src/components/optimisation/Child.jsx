@@ -1,7 +1,8 @@
 import React from "react";
 
-const Child = () => {
+const Child = ({ data }) => {
   console.log("I am child");
+  
 
   return (
     <div>
