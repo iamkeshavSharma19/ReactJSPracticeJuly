@@ -29,8 +29,9 @@ const App = () => {
         <TodoApp />
       </TodoContextProvider> */}
       {/* <ControlledForms02ByFollowing /> */}
-      {/* <button onClick={handleToggle}>Toggle Me</button>
-      {toggle && <LifeCycleCBCByFollowing />} */}
+      <button onClick={handleToggle}>Toggle Me</button>
+      {toggle && <LifeCycleCBCByFollowing />}
+      {/* <LifeCycleCBCByFollowing /> */}
       {/* <ControlledForm01ByFollowing /> */}
       {/* <ControlledForms01OwnPractice /> */}
       {/* <ContextExample>
@@ -45,7 +46,7 @@ const App = () => {
         <WrestlersApp />
       </WrestlerContextProvider> */}
       {/* <UncontrolledFormsByFollowing /> */}
-      <UncontrolledFormsPracticeOwnMyOwn />
+      {/* <UncontrolledFormsPracticeOwnMyOwn /> */}
     </div>
   );
 };
