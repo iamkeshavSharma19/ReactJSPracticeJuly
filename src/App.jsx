@@ -24,6 +24,8 @@ import FetchProductsByFollowing from "./components/Fetch/FetchProductsByFollowin
 import FetchProductsPracticeOwnMyOwn from "./components/Fetch/FetchProductsPracticeOwnMyOwn";
 import Reducer from "./components/Reducer/Reducer";
 import Optimisation from "./components/optimisation/Optimisation";
+import AddTodo from "./components/Redux/01_ReduxToolkitByFollowing/components/AddTodo";
+import ReduxApp from "./components/Redux/01_ReduxToolkitByFollowing/ReduxApp";
 // import UseReducerHookByFollowing from "./components/useReducerHookByFollowing/UseReducerHookByFollowing";
 
 const App = () => {
@@ -60,7 +62,8 @@ const App = () => {
       {/* <UseReducerHookByFollowing /> */}
       {/* <UseReducerHookPracticeOwnMyOwn /> */}
       {/* <Reducer /> */}
-      <Optimisation />
+      {/* <Optimisation /> */}
+      <ReduxApp />
     </div>
   );
 };
