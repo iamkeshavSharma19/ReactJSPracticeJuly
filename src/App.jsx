@@ -25,7 +25,7 @@ import FetchProductsPracticeOwnMyOwn from "./components/Fetch/FetchProductsPract
 import Reducer from "./components/Reducer/Reducer";
 import Optimisation from "./components/optimisation/Optimisation";
 import AddTodo from "./components/Redux/01_ReduxToolkitByFollowing/components/AddTodo";
-import ReduxApp from "./components/Redux/02_ReduxToolkitByFollowing/ReduxApp";
+import ReduxApp from "./components/Redux/03_ReduxToolkitByFollowing/ReduxApp";
 // import UseReducerHookByFollowing from "./components/useReducerHookByFollowing/UseReducerHookByFollowing";
 
 const App = () => {
