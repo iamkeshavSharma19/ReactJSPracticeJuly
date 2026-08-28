@@ -30,6 +30,8 @@ import ReduxApp from "./components/Redux/03_ReduxToolkitByFollowing/ReduxApp";
 import TodoApp from "./components/ReactJSPractice/ControlledForms01ProjectAndLocalStorage/TodoApp";
 import TodoContextProvider from "./components/ReactJSPractice/ControlledForms01ProjectAndLocalStorage/Context/TodoContextProvider";
 import ReactControlledForms02 from "./components/ReactJSPractice/ReactControlledForms02/ReactControlledForms02";
+import ReactWrestlingApp from "./components/ReactJSPractice/ControlledForms02ProjectAndLocalStorage/ReactWrestlingApp";
+import ReactWrestlingContextProvider from "./components/ReactJSPractice/ControlledForms02ProjectAndLocalStorage/context/ReactWrestlingContextProvider";
 
 const App = () => {
   const [toggle, setToggle] = useState(false);
@@ -70,7 +72,10 @@ const App = () => {
       {/* <TodoContextProvider>
         <TodoApp />
       </TodoContextProvider> */}
-      <ReactControlledForms02 />
+      {/* <ReactControlledForms02 /> */}
+      <ReactWrestlingContextProvider>
+        <ReactWrestlingApp />
+      </ReactWrestlingContextProvider>
     </div>
   );
 };
