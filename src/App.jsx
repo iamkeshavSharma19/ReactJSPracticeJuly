@@ -29,6 +29,7 @@ import ReduxApp from "./components/Redux/03_ReduxToolkitByFollowing/ReduxApp";
 // import UseReducerHookByFollowing from "./components/useReducerHookByFollowing/UseReducerHookByFollowing";
 import TodoApp from "./components/ReactJSPractice/ControlledForms01ProjectAndLocalStorage/TodoApp";
 import TodoContextProvider from "./components/ReactJSPractice/ControlledForms01ProjectAndLocalStorage/Context/TodoContextProvider";
+import ReactControlledForms02 from "./components/ReactJSPractice/ReactControlledForms02/ReactControlledForms02";
 
 const App = () => {
   const [toggle, setToggle] = useState(false);
@@ -66,9 +67,10 @@ const App = () => {
       {/* <Reducer /> */}
       {/* <Optimisation /> */}
       {/* <ReduxApp /> */}
-      <TodoContextProvider>
+      {/* <TodoContextProvider>
         <TodoApp />
-      </TodoContextProvider>
+      </TodoContextProvider> */}
+      <ReactControlledForms02 />
     </div>
   );
 };
