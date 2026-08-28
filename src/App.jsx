@@ -9,8 +9,8 @@ import ControlledForm01ByFollowing from "./ControlledFormsAugPractice/Controlled
 import ControlledForms01OwnPractice from "./ControlledFormsAugPractice/ControlledForms01OwnPractice";
 import ContextExample from "./components/ContextAPIPracticeByFollowing/ContextExample";
 import Parent from "./components/ContextAPIPracticeByFollowing/Parent";
-import TodoContextProvider from "./components/TodoAppContextAPIAugPractice/context/TodoContextProvider";
-import TodoApp from "./components/TodoAppContextAPIAugPractice/TodoApp";
+// import TodoContextProvider from "./components/TodoAppContextAPIAugPractice/context/TodoContextProvider";
+// import TodoApp from "./components/TodoAppContextAPIAugPractice/TodoApp";
 import WrestlerContextProvider, {
   WrestlerContext,
 } from "./components/WrestlersManagementSystem/context/WrestlerContextProvider";
@@ -27,6 +27,8 @@ import Optimisation from "./components/optimisation/Optimisation";
 import AddTodo from "./components/Redux/01_ReduxToolkitByFollowing/components/AddTodo";
 import ReduxApp from "./components/Redux/03_ReduxToolkitByFollowing/ReduxApp";
 // import UseReducerHookByFollowing from "./components/useReducerHookByFollowing/UseReducerHookByFollowing";
+import TodoApp from "./components/ReactJSPractice/ControlledForms01ProjectAndLocalStorage/TodoApp";
+import TodoContextProvider from "./components/ReactJSPractice/ControlledForms01ProjectAndLocalStorage/Context/TodoContextProvider";
 
 const App = () => {
   const [toggle, setToggle] = useState(false);
@@ -63,7 +65,10 @@ const App = () => {
       {/* <UseReducerHookPracticeOwnMyOwn /> */}
       {/* <Reducer /> */}
       {/* <Optimisation /> */}
-      <ReduxApp />
+      {/* <ReduxApp /> */}
+      <TodoContextProvider>
+        <TodoApp />
+      </TodoContextProvider>
     </div>
   );
 };
