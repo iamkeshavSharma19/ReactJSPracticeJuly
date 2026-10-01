@@ -32,6 +32,7 @@ import TodoContextProvider from "./components/ReactJSPractice/ControlledForms01P
 import ReactControlledForms02 from "./components/ReactJSPractice/ReactControlledForms02/ReactControlledForms02";
 import ReactWrestlingApp from "./components/ReactJSPractice/ControlledForms02ProjectAndLocalStorage/ReactWrestlingApp";
 import ReactWrestlingContextProvider from "./components/ReactJSPractice/ControlledForms02ProjectAndLocalStorage/context/ReactWrestlingContextProvider";
+import StatesInFBC from "./components/StatesInFBC/StatesInFBC";
 
 const App = () => {
   const [toggle, setToggle] = useState(false);
@@ -73,9 +74,10 @@ const App = () => {
         <TodoApp />
       </TodoContextProvider> */}
       {/* <ReactControlledForms02 /> */}
-      <ReactWrestlingContextProvider>
+      {/* <ReactWrestlingContextProvider>
         <ReactWrestlingApp />
-      </ReactWrestlingContextProvider>
+      </ReactWrestlingContextProvider> */}
+      <StatesInFBC />
     </div>
   );
 };
